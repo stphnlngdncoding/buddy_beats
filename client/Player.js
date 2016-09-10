@@ -64,6 +64,7 @@ class Player extends Component {
   }
 
   toggleStart() {
+    if (this.state.looping) return;
     this.setState({
       looping: true
     }, () => {
